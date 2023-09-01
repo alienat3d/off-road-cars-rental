@@ -1,0 +1,15 @@
+.burger-menu-button {
+  border: none;
+  background: none;
+  display: flex;
+  flex-basis: $size;
+  height: $size;
+  align-items: center;
+  justify-content: center;
+  background-color: $light-dark;
+  transition: background-color .25s ease-out;
+
+  &:hover, &:focus {
+    background-color: $accent;
+  }
+}

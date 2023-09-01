@@ -1,0 +1,68 @@
+// USER VARIABLES SECTION
+
+$accent: #F57500 // Accent Color
+$lighter-dark: #595959 // Lighter Dark Color
+$light-dark: #3C3C3C // Light Dark Color
+$dark: #303030 // Dark Color
+$deep-dark: #252525 // Deep Dark Color
+$fontsize: 16px // Body Font Size
+$textcolor: #333 // Text Color
+$lineheight: 1.7 // Document Line Height
+$userfont: 'Raleway', sans-serif // User Font Family
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
+$size: 90px // Most Common Size
+$border-opacity: .1
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 30px
+$gutter: $grid-gutter-width
+
+// IMPORT SECTION
+
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss' // Bootstrap Reboot collection
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss' // Bootstrap Breakpoints mixin
+// @import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
+// @import 'node_modules/bootstrap/scss/_utilities.scss' // Optional Bootstrap Utilites
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl2, $furl)
+  @font-face
+    font-family: $fname
+    font-style: $fstyle
+    font-weight: $fweight
+    src: url($furl2) format('woff2')
+    src: url($furl) format('woff')
+
+@include font('Roboto', normal, 400, '../fonts/roboto-regular-webfont.woff2', '../fonts/roboto-regular-webfont.woff')
+@include font('Oswald', normal, 400, '../fonts/oswald-regular-webfont.woff2', '../fonts/oswald-regular-webfont.woff')
+@include font('Oswald', normal, 500, '../fonts/oswald-medium-webfont.woff2', '../fonts/oswald-medium-webfont.woff')
+@include font('Raleway', normal, 400, '../fonts/raleway-regular-webfont.woff2', '../fonts/raleway-regular-webfont.woff')
+@include font('Raleway', normal, 600, '../fonts/raleway-semi-bold-webfont.woff2', '../fonts/raleway-semi-bold-webfont.woff')
+@include font('Raleway', normal, 800, '../fonts/raleway-extra-bold-webfont.woff2', '../fonts/raleway-extra-bold-webfont.woff')
+
+// font-display: swap
+// GENERAL CSS SETTINGS
+
+::placeholder
+  color: #666
+
+::selection
+  background-color: $accent
+  color: #fff
+
+input, textarea
+  outline: none
+  &:focus:required:invalid
+    border-color: red
+  &:required:valid
+    border-color: green
+
+body
+  font-family: $userfont
+  font-size: $fontsize
+  line-height: $lineheight
+  color: $textcolor
+  min-width: 320px
+  position: relative
+  overflow-x: hidden
