@@ -1,5 +1,10 @@
 .home-header {
+  padding-top: $size;
   height: 100%;
   color: #fff;
   background-color: $deep-dark;
+}
+
+.home-header__content {
+  height: 100%;
 }
