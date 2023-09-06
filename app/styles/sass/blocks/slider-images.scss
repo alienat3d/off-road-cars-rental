@@ -1,0 +1,30 @@
+.slider-images {
+  overflow: hidden;
+  position: relative;
+  margin-left: $size;
+  width: 75%;
+  height: 100%;
+
+  
+}
+
+.slider-images__slide {
+  overflow: hidden;
+  height: 100%;
+  
+}
+
+.slider-images__slide-background {
+  height: calc(100vh - $size);
+  background-position: center;
+  background-size: cover;
+
+  &::after {
+    content: '';
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(#000, .25);
+  }
+}
