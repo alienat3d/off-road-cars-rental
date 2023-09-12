@@ -2,13 +2,19 @@
 
 import Swiper from 'swiper';
 
-import { Keyboard, Mousewheel, Parallax } from 'swiper/modules';
+import { Keyboard, Mousewheel, Parallax, Controller } from 'swiper/modules';
 
 const swiperImages = new Swiper('.slider-images', {
-  modules: [Keyboard, Mousewheel, Parallax],
+  modules: [Parallax, Controller],
   loop: false,
   speed: 2400,
   parallax: true,
+});
+
+const swiperText = new Swiper('.slider-text', {
+  modules: [Keyboard, Mousewheel, Controller],
+  loop: false,
+  speed: 2400,
   mousewheel: {
     invert: false,
   },
@@ -17,6 +23,9 @@ const swiperImages = new Swiper('.slider-images', {
     onlyInViewport: true,
   },
 });
+
+swiperImages.controller.control = swiperText;
+swiperText.controller.control = swiperImages;
 
 // Just in case, later to delete.
 // document.addEventListener('DOMContentLoaded', () => {});

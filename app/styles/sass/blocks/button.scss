@@ -1,0 +1,41 @@
+.button {
+  position: relative;
+  border: none;
+  padding: 16px 24px 15px;
+  display: inline-block;
+  background-color: $accent;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 13px;
+  line-height: 1;
+  letter-spacing: 1.8px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: $dark;
+    transition: all 0.5s ease-out;
+  }
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    &::after {
+      width: 100%;
+    }
+  }
+  // ? alt. animation
+  // &:hover, &:focus {
+  //   border-radius: 35px;
+  //   color: #FFF;
+  // }
+}
+
+.button span {
+  z-index: 2;
+  position: relative;
+}

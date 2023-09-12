@@ -5,13 +5,15 @@
   <!-- === TOP-LINE === -->
   <div class="top-line">
     <a class="logo" href="#" style="background-image: url('images/dist/logo.png');"></a>
-    <div class="top-line__decor-line"></div>
-    <div class="top-line__contacts">
-      <a href="tel:9876543">Телефон: <span>987-65-43</span></a>
-      <div class="top-line__separator"></div>
-      <address>Адрес: <span>ул. Московская, 35</span></address>
+    <div class="top-line__inner-box">
+      <div class="top-line__decor-line"></div>
+      <div class="top-line__contacts">
+        <a href="tel:9876543">Телефон: <span>987-65-43</span></a>
+        <div class="top-line__separator"></div>
+        <address>Адрес: <span>ул. Московская, 35</span></address>
+      </div>
+      <div class="top-line__decor-line"></div>
     </div>
-    <div class="top-line__decor-line"></div>
     <button class="burger-menu-button">
       <svg width="50" height="50" fill="none">
         <path stroke="#fff" stroke-linecap="round" stroke-width="3" d="M41.67 14.58H8.33" />
@@ -48,22 +50,64 @@
     <!-- === / ASIDE === -->
     <!-- === SLIDER-CONTAINER === -->
     <div class="slider-container">
+      <!-- === SLIDER-TEXT === -->
+      <div class="slider-text">
+        <div class="swiper-wrapper">
+          <!-- Slide #1 -->
+          <div class="swiper-slide  slider-text__slide">
+            <div class="slider-text__content">
+              <h2 class="slider-text__heading">Выбор внедорожника <span>на любой</span> случай</h2>
+              <p class="slider-text__description">Выберем и подберём для вас внедорожник в кратчайшие сроки, с учётом всех
+                ваших пожеланий и потребностей.</p>
+              <button class="button  slider-text__button">
+                <span>Оставить заявку</span>
+              </button>
+            </div>
+          </div>
+          <!-- Slide #2 -->
+          <div class="swiper-slide  slider-text__slide">
+            <div class="slider-text__content">
+              <h2 class="slider-text__heading">Индивидуальный подход <span>к каждому</span> покупателю</h2>
+              <p class="slider-text__description">Все автомобили мы подбираем индивидуально для каждого клиента или покупателя и с трепетом относимся к результату нашей работы.</p>
+              <button class="button  slider-text__button">
+                <span>Оставить заявку</span>
+              </button>
+            </div>
+          </div>
+          <!-- Slide #3 -->
+          <div class="swiper-slide  slider-text__slide">
+            <div class="slider-text__content">
+              <h2 class="slider-text__heading">Выбор лучшей модели <span>из модельного</span> ряда</h2>
+              <p class="slider-text__description">В нашем модельном ряду имеются модели сотен различных внедорожников, которые удовлетворят даже самого требовательного клиента.</p>
+              <button class="button  slider-text__button">
+                <span>Оставить заявку</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- === / SLIDER-TEXT === -->
+      <!-- === SLIDER-IMAGES === -->
       <div class="slider-images  swiper">
         <div class="swiper-wrapper">
+          <!-- Slide #1 -->
           <div class="swiper-slide  slider-images__slide">
             <div class="slider-images__slide-background" data-swiper-parallax="25%"
               style="background-image: url(images/dist/content/slider/1.jpg);"></div>
           </div>
+          <!-- Slide #2 -->
           <div class="swiper-slide  slider-images__slide">
             <div class="slider-images__slide-background" data-swiper-parallax="25%"
               style="background-image: url(images/dist/content/slider/2.jpg);"></div>
           </div>
+          <!-- Slide #3 -->
           <div class="swiper-slide  slider-images__slide">
             <div class="slider-images__slide-background" data-swiper-parallax="25%"
               style="background-image: url(images/dist/content/slider/3.jpg);"></div>
           </div>
         </div> <!-- .swiper-wrapper -->
       </div> <!-- .slider-images .swiper -->
+      <!-- === / SLIDER-IMAGES === -->
       <div class="slider__bottom">
         <div class="slider__share-list  socials-list">
           <a class="socials-list__link  slider__share-link"

@@ -1,6 +1,5 @@
 .top-line {
   z-index: 50;
-  border-bottom: 1px solid rgba(#fff, $border-opacity);
   position: absolute;
   top: 0;
   display: flex;
@@ -8,6 +7,15 @@
   width: 100%;
   height: $size;
   background-color: $deep-dark;
+}
+
+.top-line__inner-box {
+  border-bottom: 1px solid rgba(#fff, $border-opacity);
+  display: flex;
+  align-items: center;
+  align-items: center;
+  width: 100%;
+  height: $size;
 }
 
 .top-line__decor-line {
@@ -21,7 +29,7 @@
     display: inline-block;
     width: $size;
     height: 1px;
-    background-color: rgba(#fff, $border-opacity*1.5);
+    background-color: rgba(#fff, $border-opacity * 1.5);
   }
 }
 
@@ -31,8 +39,8 @@
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 500;
-  letter-spacing: .3em;
-  color: rgba(255, 255, 255, 0.50);
+  letter-spacing: 0.3em;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .top-line__contacts a {
@@ -51,7 +59,7 @@
   margin-right: 20px;
   width: 1px;
   height: 30px;
-  background-color: rgba(#fff, $border-opacity*1.5);
+  background-color: rgba(#fff, $border-opacity * 1.5);
 }
 
 .top-line__contacts address {
