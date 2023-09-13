@@ -2,7 +2,7 @@
 
 import Swiper from 'swiper';
 
-import { Keyboard, Mousewheel, Parallax, Controller } from 'swiper/modules';
+import { Keyboard, Mousewheel, Parallax, Controller, Pagination, Scrollbar, Navigation } from 'swiper/modules';
 
 const swiperImages = new Swiper('.slider-images', {
   modules: [Parallax, Controller],
@@ -12,7 +12,7 @@ const swiperImages = new Swiper('.slider-images', {
 });
 
 const swiperText = new Swiper('.slider-text', {
-  modules: [Keyboard, Mousewheel, Controller],
+  modules: [Keyboard, Mousewheel, Controller, Pagination, Scrollbar, Navigation],
   loop: false,
   speed: 2400,
   mousewheel: {
@@ -21,6 +21,18 @@ const swiperText = new Swiper('.slider-text', {
   keyboard: {
     enabled: true,
     onlyInViewport: true,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable: true,
+  },
+  navigation: {
+    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-button-next',
   },
 });
 
