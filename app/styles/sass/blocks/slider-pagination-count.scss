@@ -1,0 +1,18 @@
+.slider-pagination-count{
+  position: absolute;
+  top: 104px;
+  right: 25px;
+  width: 96px;
+  height: 80px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  color: rgba(#fff, $border-opacity*3);
+}
+
+.slider-pagination-count__current {
+  display: inline-block;
+  min-width: 41px;
+  font-size: 38px;
+  color: $accent;
+}

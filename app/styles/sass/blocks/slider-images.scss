@@ -1,4 +1,5 @@
 .slider-images {
+  z-index: 4;
   overflow: hidden;
   position: relative;
   margin-left: $size;
@@ -18,7 +19,7 @@
 
   &::after {
     content: '';
-    z-index: 2;
+    z-index: 5;
     position: absolute;
     width: 100%;
     height: 100%;

@@ -1,6 +1,6 @@
 .slider-text {
   margin-left: $size;
-  z-index: 3;
+  z-index: 6;
   position: absolute;
   width: 100%;
   height: calc(100vh - $size * 2.5);
@@ -15,7 +15,7 @@
 }
 
 .slider-text__content{
-  width: 670px;
+  width: 700px;
   text-align: right;
   text-transform: uppercase;
 }
@@ -36,6 +36,6 @@
 .slider-text__description {
   margin-bottom: 33px;
   margin-left: auto;
-  max-width: 590px;
+  max-width: 640px;
   font-weight: 600;
 }

@@ -1,0 +1,13 @@
+.slider-gear{
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  right: 3%;
+  translate: -1.3% -52%;
+  width: 480px;
+  height: 480px;
+  background-image: url("../images/dist/decor-gear.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}

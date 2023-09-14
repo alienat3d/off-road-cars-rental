@@ -1,0 +1,16 @@
+.slider-pagination-num{
+  z-index: 50;
+  position: absolute;
+  right: 23px;
+  bottom: 29px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 120px;
+  line-height: 1;
+  color: $deep-dark;
+  -webkit-text-stroke: 1px rgba(#fff, 0.15);
+}
+
+.slider-pagination-num__dot{
+  color: $accent;
+  -webkit-text-stroke: 1px transparent;
+}
