@@ -23,11 +23,8 @@ const swiperImages = new Swiper('.slider-images', {
     el: '.slider-pagination-count__total',
     type: 'custom',
     renderCustom: function (swiper, current, total) {
-      if (total < 10) {
-        return `0${total}`;
-      } else {
-        return `${total}`;
-      }
+      const totalResult = total < 10 ? `0${total}` : `${total}`;
+      return totalResult;
     },
   },
 });
@@ -103,12 +100,13 @@ swiperImages.on('slideChange', function () {
         force3D: true,
         y: 10,
       });
-      
-      if (index < 10) {
+      const totalResult = index < 10 ? `0${index}` : `${index}`;
+      return currentNumber.textContent = totalResult, currentSlideNum.textContent = totalResult;
+      /* if (index < 10) {
         return currentNumber.textContent = `0${index}`, currentSlideNum.textContent = `0${index}`;
       } else {
         return currentNumber.textContent = `${index}`, currentSlideNum.textContent = `${index}`;
-      }
+      } */
     },
   });
 
