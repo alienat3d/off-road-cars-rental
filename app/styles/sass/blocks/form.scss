@@ -1,0 +1,21 @@
+.form__input {
+  border: 1px solid $lighter-dark;
+  padding: 12px 16px;
+  min-width: 280px;
+  display: block;
+  background-color: $dark;
+  color: #fff;
+  transition: all 0.25s ease-out;
+
+  &::placeholder {
+    opacity: 1;
+  }
+
+  &:focus {
+    border-color: lighten($lighter-dark, 10);
+  }
+}
+
+.form__textarea {
+  min-height: 100px;
+}

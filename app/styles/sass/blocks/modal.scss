@@ -1,0 +1,61 @@
+.modal {
+  z-index: 9999999999;
+  position: absolute;
+  font-family: 'Raleway' ,sans-serif;
+}
+
+.modal__overlay {
+}
+
+.modal__container {
+  border-radius: 0;
+  box-shadow: 0 0 0 7px rgba(#fff, .1);
+  background-color: $light-dark;
+}
+
+.modal__header {position: relative;
+  justify-content: center;
+}
+
+.modal__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  color: #fff;
+}
+
+.modal__close {
+  position: absolute;
+  top: -20px;
+  right: -13px;
+  font-size: 22px;
+  color: rgba(#fff, .5);
+  transition: color .25s ease-out, rotate .5s ease-out;
+
+  &:hover {
+    rotate: 90deg;
+    color: rgba(#fff, 1);
+  }
+}
+
+.form {
+}
+
+.modal__form {
+}
+
+.modal__content {
+}
+
+.form__input {
+  margin-bottom: 8px;
+}
+
+.modal__input {
+}
+
+.modal__footer {
+  display: flex;
+  justify-content: center;
+}

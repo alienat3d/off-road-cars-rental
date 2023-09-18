@@ -44,6 +44,7 @@
 		"webpack-stream": "^7.0.0"
 	},
 	"dependencies": {
-		"gsap": "^3.12.2"
+		"gsap": "^3.12.2",
+		"micromodal": "^0.4.10"
 	}
 }

@@ -13,6 +13,8 @@ import {
 } from 'swiper/modules';
 
 import { gsap, Power2 } from 'gsap';
+
+import MicroModal from 'micromodal';
 // === SWIPER SLIDER ===
 const swiperImages = new Swiper('.slider-images', {
   modules: [Parallax, Controller, Pagination],
@@ -100,13 +102,8 @@ swiperImages.on('slideChange', function () {
         force3D: true,
         y: 10,
       });
-      const totalResult = index < 10 ? `0${index}` : `${index}`;
-      return currentNumber.textContent = totalResult, currentSlideNum.textContent = totalResult;
-      /* if (index < 10) {
-        return currentNumber.textContent = `0${index}`, currentSlideNum.textContent = `0${index}`;
-      } else {
-        return currentNumber.textContent = `${index}`, currentSlideNum.textContent = `${index}`;
-      } */
+      const indexResult = index < 10 ? `0${index}` : `${index}`;
+      return currentNumber.textContent = indexResult, currentSlideNum.textContent = indexResult;
     },
   });
 
@@ -119,5 +116,16 @@ swiperImages.on('slideChange', function () {
   });
 });
 // === / SLIDER CHANGE COUNT ===
+// === MODAL ===
+MicroModal.init({
+  openTrigger: 'data-micromodal-open',
+  closeTrigger: 'data-micromodal-close',
+  // Disabling auto-focus on first input for better usability on mobile devices.
+  disableFocus: true,
+  disableScroll: true,
+  awaitOpenAnimation: true,
+  awaitCloseAnimation: true
+})
+// === / MODAL ===
 // Just in case, later to delete.
 // document.addEventListener('DOMContentLoaded', () => {});
