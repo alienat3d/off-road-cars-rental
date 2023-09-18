@@ -1,4 +1,4 @@
-.slider-pagination-num{
+.slider-pagination-num {
   z-index: 50;
   position: absolute;
   right: 23px;
@@ -8,9 +8,14 @@
   line-height: 1;
   color: $deep-dark;
   -webkit-text-stroke: 1px rgba(#fff, 0.15);
+
+  @include media-breakpoint-down(xl) {
+    right: 20px;
+    font-size: 110px;
+  }
 }
 
-.slider-pagination-num__dot{
+.slider-pagination-num__dot {
   color: $accent;
   -webkit-text-stroke: 1px transparent;
 }

@@ -5,6 +5,11 @@
   margin-left: $size;
   width: 75%;
   height: 100%;
+
+  @include media-breakpoint-down(md) {
+    margin-left: $size-sm;
+    width: 100%;
+  }
 }
 
 .slider-images__slide {
@@ -24,5 +29,9 @@
     width: 100%;
     height: 100%;
     background-color: rgba(#000, .25);
+  }
+
+  @include media-breakpoint-down(md) {
+    height: calc(100vh - $size-sm);
   }
 }

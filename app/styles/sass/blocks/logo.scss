@@ -5,4 +5,24 @@
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+
+  &--sm {
+    display: none;
+
+    @include media-breakpoint-down(md) {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: inline-block;
+      width: 132px;
+      height: 102px;
+      background-position: 0%;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
 }

@@ -9,6 +9,11 @@
   width: $size;
   height: 100%;
   background-color: $dark;
+
+  @include media-breakpoint-down(md) {
+    padding-top: $size-sm;
+    width: $size-sm;
+  }
 }
 
 .home-aside__decor,
@@ -22,6 +27,10 @@
   flex: 1 0 0;
   width: $size;
   background-image: url('../images/dist/decor-tire-marks.svg');
+
+  @include media-breakpoint-down(md) {
+    width: $size-sm;
+  }
 }
 
 .home-aside__socials-list.socials-list {
@@ -35,4 +44,9 @@
   width: $size;
   background-color: $accent;
   background-image: url('../images/dist/icon-share.svg');
+
+  @include media-breakpoint-down(md) {
+    flex: 0 0 $size-sm;
+    width: $size-sm;
+  }
 }

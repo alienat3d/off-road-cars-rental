@@ -13,7 +13,6 @@
   border-bottom: 1px solid rgba(#fff, $border-opacity);
   display: flex;
   align-items: center;
-  align-items: center;
   width: 100%;
   height: $size;
 }
@@ -30,6 +29,10 @@
     width: $size;
     height: 1px;
     background-color: rgba(#fff, $border-opacity * 1.5);
+
+    @include media-breakpoint-down(xl) {
+      display: none;
+    }
   }
 }
 
@@ -41,11 +44,22 @@
   font-weight: 500;
   letter-spacing: 0.3em;
   color: rgba(255, 255, 255, 0.5);
+
+  @include media-breakpoint-down(lg) {
+    justify-content: center;
+    flex-direction: column;
+    font-size: 17px;
+  }
 }
 
 .top-line__contacts a {
   color: inherit;
   text-decoration: none;
+
+  @include media-breakpoint-down(lg) {
+    padding-top: 5px;
+    padding-left: 3px;
+  }
 }
 
 .top-line__contacts span {
@@ -60,8 +74,20 @@
   width: 1px;
   height: 30px;
   background-color: rgba(#fff, $border-opacity * 1.5);
+
+  @include media-breakpoint-down(lg) {
+    display: none;
+  }
 }
 
 .top-line__contacts address {
   margin-bottom: 0;
+
+  @include media-breakpoint-down(lg) {
+    border-top: 1px solid rgba(#fff, $border-opacity * 1.5);
+    margin: 5px;
+    padding-left: 6px;
+    padding-top: 5px;
+    width: fit-content;
+  }
 }

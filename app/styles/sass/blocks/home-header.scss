@@ -3,6 +3,10 @@
   height: 100%;
   color: #fff;
   background-color: $deep-dark;
+
+  @include media-breakpoint-down(md) {
+    padding-top: $size-sm;
+  }
 }
 
 .home-header__content {

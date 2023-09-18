@@ -4,6 +4,10 @@
   padding-left: $size;
   width: 100%;
   height: 100%;
+
+  @include media-breakpoint-down(md) {
+    padding-left: $size-sm;
+  }
 }
 
 .slider__bottom {
@@ -15,6 +19,16 @@
   width: calc(79% - $size);
   align-items: center;
   height: $size;
+
+  @include media-breakpoint-down(md) {
+    left: $size-sm;
+    width: calc(79% - $size-sm);
+    height: $size-sm;
+  }
+  
+  @include media-breakpoint-down(xl) {
+    justify-content: space-between;
+  }
 }
 
 .slider__share-list {
@@ -25,6 +39,10 @@
   align-items: center;
   height: $size;
   background-color: $light-dark;
+
+  @include media-breakpoint-down(md) {
+    height: $size-sm;
+  }
 }
 
 .slider__share-link.socials-list__link {
@@ -58,12 +76,15 @@
 }
 
 .slider__pagination {
-  // margin-bottom: 5px;
   flex: 0 0 140px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: $size;
+
+  @include media-breakpoint-down(md) {
+    height: $size-sm;
+  }
 }
 .swiper-pagination {
   margin-top: 8px;
@@ -101,6 +122,10 @@
 .slider__scrollbar {
   margin-top: 4px;
   flex: 1 0 0;
+
+  @include media-breakpoint-down(xl) {
+    display: none;
+  }
 }
 .swiper-horizontal > .swiper-scrollbar,
 .swiper-scrollbar.swiper-scrollbar-horizontal {
@@ -123,6 +148,10 @@
   margin-left: auto;
   position: relative;
   max-width: 96px;
+
+  @include media-breakpoint-down(xl) {
+    max-width: 115px;
+  }
 }
 
 .slider__nav-buttons .swiper-button-prev,
