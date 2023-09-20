@@ -17,7 +17,7 @@
 </a>
 
 >Desktop Resolutions: 
-* 1920 x 1080 (38%) Figma Layout x 1,5
+* 1920 x 1080 (38%) Figma Layout x 1,2
 * 1366 x 768  (10%)
 * 1536 x 864  (10%)
 * 1280 x 1024 (5%)

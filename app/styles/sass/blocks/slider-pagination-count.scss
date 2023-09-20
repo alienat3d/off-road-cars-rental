@@ -1,12 +1,12 @@
 .slider-pagination-count {
   position: absolute;
-  top: 136px;
-  right: 72px;
-  width: 140px;
-  height: 120px;
+  top: 12%;
+  right: 3.8%;
+  width: 116px;
+  height: 96px;
   font-family: 'Oswald', sans-serif;
   font-weight: 500;
-  font-size: 35px;
+  font-size: 34px;
   color: rgba(#fff, $border-opacity * 3);
 
   @include media-breakpoint-down(xxl) {
@@ -29,9 +29,13 @@
 
 .slider-pagination-count__current {
   display: inline-block;
-  min-width: 41px;
-  font-size: 38px;
+  min-width: 49px;
+  font-size: 46px;
   color: $accent;
+
+  @include media-breakpoint-down(lg) {
+    font-size: 38px;
+  }
 
   @include media-breakpoint-down(lg) {
     font-size: 33px;
