@@ -1,18 +1,39 @@
-.slider-pagination-count{
+.slider-pagination-count {
   position: absolute;
-  top: 84px;
-  right: 7px;
-  width: 96px;
-  height: 80px;
+  top: 136px;
+  right: 72px;
+  width: 140px;
+  height: 120px;
   font-family: 'Oswald', sans-serif;
   font-weight: 500;
-  font-size: 23px;
-  color: rgba(#fff, $border-opacity*3);
+  font-size: 35px;
+  color: rgba(#fff, $border-opacity * 3);
+
+  @include media-breakpoint-down(xxl) {
+    top: 92px;
+    right: 57px;
+    font-size: 28px;
+  }
+
+  @include media-breakpoint-down(xl) {
+    top: 84px;
+    right: 7px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    top: 79px;
+    right: 2px;
+    font-size: 23px;
+  }
 }
 
 .slider-pagination-count__current {
   display: inline-block;
   min-width: 41px;
-  font-size: 33px;
+  font-size: 38px;
   color: $accent;
+
+  @include media-breakpoint-down(lg) {
+    font-size: 33px;
+  }
 }

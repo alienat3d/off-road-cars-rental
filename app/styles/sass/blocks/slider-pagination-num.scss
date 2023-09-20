@@ -1,7 +1,7 @@
 .slider-pagination-num {
   z-index: 50;
   position: absolute;
-  right: 23px;
+  right: 83px;
   bottom: 29px;
   font-family: 'Oswald', sans-serif;
   font-size: 120px;
@@ -10,8 +10,13 @@
   -webkit-text-stroke: 1px rgba(#fff, 0.15);
 
   @include media-breakpoint-down(xl) {
-    right: 20px;
-    font-size: 110px;
+    right: 23px;
+    bottom: 29px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    right: 12px;
+    font-size: 90px;
   }
 }
 
