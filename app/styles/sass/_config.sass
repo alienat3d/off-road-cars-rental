@@ -10,8 +10,9 @@ $textcolor: #333 // Text Color
 $lineheight: 1.7 // Document Line Height
 $userfont: 'Raleway', sans-serif // User Font Family
 $systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
+$size-lg: 100px // Larger Size
 $size: 80px // Most Common Size
-$size-sm: 50px // Most Common Size
+$size-sm: 50px // Smaller Size
 $border-opacity: .1
 
 // Bootstrap compatible gutter variable => $gutter
@@ -36,6 +37,7 @@ $gutter: $grid-gutter-width
     font-weight: $fweight
     src: url($furl2) format('woff2')
     src: url($furl) format('woff')
+    font-display: swap
 
 @include font('Roboto', normal, 400, '../fonts/roboto-regular-webfont.woff2', '../fonts/roboto-regular-webfont.woff')
 @include font('Oswald', normal, 400, '../fonts/oswald-regular-webfont.woff2', '../fonts/oswald-regular-webfont.woff')
@@ -44,7 +46,6 @@ $gutter: $grid-gutter-width
 @include font('Raleway', normal, 600, '../fonts/raleway-semi-bold-webfont.woff2', '../fonts/raleway-semi-bold-webfont.woff')
 @include font('Raleway', normal, 800, '../fonts/raleway-extra-bold-webfont.woff2', '../fonts/raleway-extra-bold-webfont.woff')
 
-// font-display: swap
 // GENERAL CSS SETTINGS
 
 ::placeholder

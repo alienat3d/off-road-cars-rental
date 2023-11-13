@@ -3,7 +3,7 @@
   overflow: hidden;
   position: relative;
   margin-left: $size;
-  width: 75%;
+  width: calc(75% + 1.2px);
   height: 100%;
 
   @include media-breakpoint-down(md) {
@@ -15,6 +15,7 @@
 .slider-images__slide {
   overflow: hidden;
   height: 100%;
+  min-width: 100%;
 }
 
 .slider-images__slide-background {

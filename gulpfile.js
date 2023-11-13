@@ -36,7 +36,7 @@ function browsersync() {
 		ghostMode: { clicks: false },
 		notify: false,
 		online: true,
-		// tunnel: 'yousutename', // Attempt to use the URL https://yousutename.loca.lt
+		// tunnel: 'tsaplin', // Attempt to use the URL https://tsaplin.loca.lt
 	})
 }
 
@@ -106,7 +106,7 @@ function buildcopy() {
 		'{app/js,app/css}/*.min.*',
 		'app/images/**/*.*',
 		'!app/images/src/**/*',
-		'app/fonts/**/*'
+		'app/fonts/*'
 	], { base: 'app/' })
 	.pipe(dest('dist'))
 }

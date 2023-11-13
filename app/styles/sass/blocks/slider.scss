@@ -1,10 +1,13 @@
 .slider {
   overflow: hidden;
   position: relative;
-  padding-left: $size;
+  padding-left: $size-lg;
   width: 100%;
   height: 100%;
 
+  @include media-breakpoint-down(xxl) {
+    padding-left: $size;
+  }
   @include media-breakpoint-down(md) {
     padding-left: $size-sm;
   }
@@ -14,20 +17,24 @@
   z-index: 5;
   position: absolute;
   bottom: 0;
-  left: $size;
+  left: $size-lg;
   display: flex;
-  width: calc(79% - $size);
+  width: calc(79% - $size-lg);
   align-items: center;
-  height: $size;
+  height: $size-lg;
 
+  @include media-breakpoint-down(xxl) {
+    left: $size;
+    width: calc(79% - $size);
+    height: $size;
+  }
+  @include media-breakpoint-down(xl) {
+    justify-content: space-between;
+  }
   @include media-breakpoint-down(md) {
     left: $size-sm;
     width: calc(79% - $size-sm);
     height: $size-sm;
-  }
-  
-  @include media-breakpoint-down(xl) {
-    justify-content: space-between;
   }
 }
 
@@ -37,9 +44,12 @@
   flex: 0 1 auto;
   display: flex;
   align-items: center;
-  height: $size;
+  height: $size-lg;
   background-color: $light-dark;
 
+  @include media-breakpoint-down(xxl) {
+    height: $size;
+  }
   @include media-breakpoint-down(md) {
     height: $size-sm;
   }
@@ -76,27 +86,36 @@
 }
 
 .slider__pagination {
-  flex: 0 0 140px;
+  flex: 0 0 170px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: $size;
+  height: $size-lg;
 
+  @include media-breakpoint-down(xxl) {
+    flex: 0 0 140px;
+    height: $size;
+  }
   @include media-breakpoint-down(md) {
     height: $size-sm;
   }
 }
 .swiper-pagination {
-  margin-top: 8px;
+  margin-top: 15px;
   margin-left: 10px;
   position: relative;
 }
 .slider__pagination .swiper-pagination-bullet {
   position: relative;
   opacity: 1;
-  width: 8px;
-  height: 8px;
+  width: 14px;
+  height: 14px;
   background-color: #fff;
+
+  @include media-breakpoint-down(xxl) {
+    width: 8px;
+    height: 8px;
+  }
 }
 .slider__pagination .swiper-pagination-bullet-active::before,
 .slider__pagination .swiper-pagination-bullet-active::after {
@@ -108,19 +127,29 @@
   border-radius: 50%;
 }
 .slider__pagination .swiper-pagination-bullet-active::before {
-  width: 5px;
-  height: 5px;
+  width: 8px;
+  height: 8px;
   background-color: $accent;
+
+  @include media-breakpoint-down(xxl) {
+    width: 5px;
+    height: 5px;
+  }
 }
 .slider__pagination .swiper-pagination-bullet-active::after {
   border: 2px solid $accent;
-  width: 14px;
-  height: 14px;
+  width: 20px;
+  height: 20px;
   background-color: transparent;
+
+  @include media-breakpoint-down(xxl) {
+    width: 14px;
+    height: 14px;
+  }
 }
 
 .slider__scrollbar {
-  margin-top: 4px;
+  margin-top: 6px;
   flex: 1 0 0;
 
   @include media-breakpoint-down(xl) {
@@ -140,18 +169,19 @@
 }
 
 .slider__nav-buttons {
+  margin-right: 70px;
   position: relative;
-  flex: 0 0 140px;
+  flex: 0 0 170px;
+
+  @include media-breakpoint-down(xxl) {
+    flex: 0 0 140px;
+  }
 }
 
 .slider-navigation__container {
   margin-left: auto;
   position: relative;
-  max-width: 96px;
-
-  @include media-breakpoint-down(xl) {
-    max-width: 115px;
-  }
+  max-width: 100px;
 }
 
 .slider__nav-buttons .swiper-button-prev,
@@ -162,6 +192,13 @@
   height: 40px;
   color: $accent;
   background-color: #3c3c3c;
+  transition: background-color .3s;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: lighten(#3c3c3c, 5%);
+  }
 }
 
 .swiper-button-prev {
@@ -174,6 +211,7 @@
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
+  margin-bottom: 0.5px;
   font-size: 19px;
 }
 

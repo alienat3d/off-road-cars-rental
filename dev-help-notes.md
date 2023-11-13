@@ -17,28 +17,33 @@
 </a>
 
 >Desktop Resolutions: 
-* 1920 x 1080 (38%) Figma Layout x 1,2
+* 1920 x 1080 (38%)
 * 1366 x 768  (10%)
 * 1536 x 864  (10%)
 * 1280 x 1024 (5%)
 * 1600 x 900  (4%)
 * 1440 x 900  (3%)
+* 1280 x 720 (Figma Layout 1:1)
 
 >Tablet Resolutions:
 * 768  x 1024 (20%)
-* 1280 x 800  (6%) x Figma Layout
+* 1280 x 800  (6%)
 * 1138 x 712  (5%)
 * 810  x 1080 (5%)
 * 960  x 600  (4%)
 * 1024 x 1366 (4%)
+* 800  x 1280
+* 820  x 1180
+* 601  x 962
 
 >Mobile Resolutions:
-* 393 x 873 (12%)
-* 360 x 800 (12%)
-* 414 x 896 (9%)
-* 393 x 851 (6%)
-* 390 x 844 (6%)
-* 412 x 915 (5%)
+* 393  x 873  (12%)
+* 360  x 800  (12%)
+* 414  x 896  (9%)
+* 393  x 851  (6%)
+* 390  x 844  (6%)
+* 412  x 915  (5%)
+* 360  x 780
 
 <hr>
 
@@ -53,6 +58,36 @@
 *  700 - Bold
 *  800 - Extra Bold (Ultra Bold)
 *  900 - Black (Heavy)
+
+<hr>
+
+<a href="https://gs.statcounter.com/browser-market-share/desktop/russian-federation">
+  <h2>Browser Market Share Russian Federation 08/2023</h2>
+</a>
+
+>Desktop Browsers:
+* Chrome           (47%) -> Blink
+* Yandex Browser   (25%) -> Blink
+* Opera            (12%) -> Blink
+* Edge             (7%)  -> Blink
+* Firefox          (5%)  -> Quantum
+* Safari           (4%)  -> WebKit
+
+>Tablet Browsers:
+* Chrome           (55%)
+* Safari           (20%)
+* Yandex Browser   (16%)
+* Android          (4%)
+* Opera            (3%)
+* Edge             (1%)
+
+>Mobile Browsers:
+* Chrome           (60%)
+* Safari           (22%)
+* Yandex Browser   (13%)
+* Samsung Internet (2%)
+* Opera            (1,5%)
+* Firefox          (0,4%)
 
 <hr>
 

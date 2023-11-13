@@ -2,14 +2,18 @@
   z-index: 7;
   position: absolute;
   top: 0;
-  padding-top: $size;
+  padding-top: $size-lg;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: $size;
+  width: $size-lg;
   height: 100%;
   background-color: $dark;
 
+  @include media-breakpoint-down(xxl) {
+    padding-top: $size;
+    width: $size;
+  }
   @include media-breakpoint-down(md) {
     padding-top: $size-sm;
     width: $size-sm;
@@ -25,12 +29,12 @@
 
 .home-aside__decor {
   flex: 1 0 0;
-  width: $size;
+  width: 100%;
   background-image: url('../images/dist/decor-tire-marks.svg');
 
-  @include media-breakpoint-down(md) {
-    width: $size-sm;
-  }
+  // @include media-breakpoint-down(md) {
+  //   width: $size-sm;
+  // }
 }
 
 .home-aside__socials-list.socials-list {
@@ -40,11 +44,15 @@
 }
 
 .home-aside__share-icon {
-  flex: 0 0 $size;
-  width: $size;
+  flex: 0 0 $size-lg;
+  width: $size-lg;
   background-color: $accent;
   background-image: url('../images/dist/icon-share.svg');
 
+  @include media-breakpoint-down(xxl) {
+    flex: 0 0 $size;
+    width: $size;
+  }
   @include media-breakpoint-down(md) {
     flex: 0 0 $size-sm;
     width: $size-sm;
