@@ -91,6 +91,18 @@
 
 <hr>
 
+<h2>ISO standards for Languages</h2>
+<!-- (Language [lang-code_country-code]) -->
+* Russian [ru_RU]
+* English (USA) [en_US]
+* German [de_DE]
+* Ukrainian [uk_UA]
+* Turkish [tr_TR]
+
+<hr>
+
 <h3>Useful Links:</h3>
 
 <a href="https://tpverstak.ru/flex-cheatsheet/">Шпаргалка по Flexbox CSS</a>
+<a href="https://cutt.ly/iso-languages">Список ISO-кодов языков</a>
+<a href="https://cutt.ly/country-code">Список ISO-кодов стран</a>
