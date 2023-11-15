@@ -108,23 +108,23 @@ function buildcopy() {
 		'!app/images/src/**/*',
 		'app/fonts/*'
 	], { base: 'app/' })
-	.pipe(dest('dist'))
+	.pipe(dest('docs'))
 }
 
 async function buildhtml() {
-	let includes = new ssi('app/', 'dist/', '/**/*.html')
+	let includes = new ssi('app/', 'docs/', '/**/*.html')
 	includes.compile()
-	await deleteAsync('dist/parts', { force: true })
+	await deleteAsync('docs/parts', { force: true })
 }
 
-async function cleandist() {
-	await deleteAsync('dist/**/*', { force: true })
+async function cleanDocs() {
+	await deleteAsync('docs/**/*', { force: true })
 }
 
 function deploy() {
-	return src('dist/')
+	return src('docs/')
 		.pipe(rsync({
-			root: 'dist/',
+			root: 'docs/',
 			hostname: 'username@yousite.com',
 			destination: 'yousite/public_html/',
 			clean: true, // Mirror copy with file deletion
@@ -146,6 +146,6 @@ function startwatch() {
 
 export { scripts, styles, images, deploy }
 export let assets = series(scripts, styles, images)
-export let build = series(cleandist, images, scripts, styles, buildcopy, buildhtml)
+export let build = series(cleanDocs, images, scripts, styles, buildcopy, buildhtml)
 
 export default series(scripts, styles, images, parallel(browsersync, startwatch))
